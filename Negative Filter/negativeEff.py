@@ -3,7 +3,7 @@
 # Pembuat: Resma Adi Nugroho (24060121120021)
 # Tanggal:  23 April 2022
 
-# Mengimport file OpenCv dan Matplotlib 
+# Mengimport file library OpenCv dan Matplotlib 
 import cv2
 import matplotlib.pyplot as plot
 
@@ -29,15 +29,15 @@ for i in range(0, height - 1):
         pixel = img_ori[i, j]
           
         # Melakukan penegatifan pada setiap channel warna RGB 
-        # kemudian 255 dikurangi nilai pixel
+        # dengan pengurangan nilai pixel
           
         # index pertama berisi channel warna red
         pixel[0] = 255 - pixel[0]
           
-        # index kedua berisi channel warna hijau
+        # index kedua berisi channel warna green
         pixel[1] = 255 - pixel[1]
           
-        # index ketiga berisi channel warna biru
+        # index ketiga berisi channel warna blue
         pixel[2] = 255 - pixel[2]
           
         # masukan nilai yang baru ke dalam pixel
